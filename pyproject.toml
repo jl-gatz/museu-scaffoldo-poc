@@ -1,20 +1,15 @@
-[project]
+[tool.poetry]
 name = "museu-scaffoldo"
 version = "0.1.0"
 description = ""
-authors = [
-    {name = "J-L Gatz",email = "elan.rgb@gmail.com"}
-]
+authors = ["J-L Gatz <elan.rgb@gmail.com>"]
 readme = "README.md"
-requires-python = ">=3.12,<4.0"
-dependencies = [
-    "fastapi[standard] (>=0.128.0,<0.129.0)"
-]
 
 [tool.poetry.dependencies]
-python = "^3.11"
+python = "^3.12"
 fastapi = "*"
 uvicorn = "*"
+
 
 
 [build-system]
