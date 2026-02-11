@@ -4,7 +4,10 @@ from fastapi import FastAPI
 from museu_scaffoldo.core.api.v1.routers import router
 from museu_scaffoldo.core.api.v1.schemas import HealthCheckSchema
 
-app = FastAPI(title="API do Museu de Informática")
+app = FastAPI(
+    title="API do Museu de Informática",
+    swagger_ui_parameters={"operationsSorter": "method"},
+)
 
 # Incluindo as rotas dos apps com prefixos
 app.include_router(router, prefix="/api/v1")
